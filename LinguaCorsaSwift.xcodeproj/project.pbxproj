@@ -1,0 +1,414 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF10542A193F867000F1B375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF105429193F867000F1B375 /* AppDelegate.swift */; };
+		EF10542C193F867000F1B375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF10542B193F867000F1B375 /* ViewController.swift */; };
+		EF10542F193F867000F1B375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF10542D193F867000F1B375 /* Main.storyboard */; };
+		EF105431193F867000F1B375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF105430193F867000F1B375 /* Images.xcassets */; };
+		EF10543D193F867100F1B375 /* LinguaCorsaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EF105437193F867100F1B375 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EF10541C193F867000F1B375 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EF105423193F867000F1B375;
+			remoteInfo = LinguaCorsaSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EF105424193F867000F1B375 /* LinguaCorsaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinguaCorsaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF105428193F867000F1B375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF105429193F867000F1B375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EF10542B193F867000F1B375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EF10542E193F867000F1B375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EF105430193F867000F1B375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		EF105436193F867000F1B375 /* LinguaCorsaSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinguaCorsaSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF10543B193F867100F1B375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaCorsaSwiftTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF105421193F867000F1B375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF105433193F867000F1B375 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF10541B193F867000F1B375 = {
+			isa = PBXGroup;
+			children = (
+				EF105426193F867000F1B375 /* LinguaCorsaSwift */,
+				EF105439193F867100F1B375 /* LinguaCorsaSwiftTests */,
+				EF105425193F867000F1B375 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF105425193F867000F1B375 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF105424193F867000F1B375 /* LinguaCorsaSwift.app */,
+				EF105436193F867000F1B375 /* LinguaCorsaSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF105426193F867000F1B375 /* LinguaCorsaSwift */ = {
+			isa = PBXGroup;
+			children = (
+				EF105429193F867000F1B375 /* AppDelegate.swift */,
+				EF10542B193F867000F1B375 /* ViewController.swift */,
+				EF10542D193F867000F1B375 /* Main.storyboard */,
+				EF105430193F867000F1B375 /* Images.xcassets */,
+				EF105427193F867000F1B375 /* Supporting Files */,
+			);
+			path = LinguaCorsaSwift;
+			sourceTree = "<group>";
+		};
+		EF105427193F867000F1B375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF105428193F867000F1B375 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF105439193F867100F1B375 /* LinguaCorsaSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */,
+				EF10543A193F867100F1B375 /* Supporting Files */,
+			);
+			path = LinguaCorsaSwiftTests;
+			sourceTree = "<group>";
+		};
+		EF10543A193F867100F1B375 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF10543B193F867100F1B375 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF105423193F867000F1B375 /* LinguaCorsaSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF105440193F867100F1B375 /* Build configuration list for PBXNativeTarget "LinguaCorsaSwift" */;
+			buildPhases = (
+				EF105420193F867000F1B375 /* Sources */,
+				EF105421193F867000F1B375 /* Frameworks */,
+				EF105422193F867000F1B375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LinguaCorsaSwift;
+			productName = LinguaCorsaSwift;
+			productReference = EF105424193F867000F1B375 /* LinguaCorsaSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EF105435193F867000F1B375 /* LinguaCorsaSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF105443193F867100F1B375 /* Build configuration list for PBXNativeTarget "LinguaCorsaSwiftTests" */;
+			buildPhases = (
+				EF105432193F867000F1B375 /* Sources */,
+				EF105433193F867000F1B375 /* Frameworks */,
+				EF105434193F867000F1B375 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EF105438193F867100F1B375 /* PBXTargetDependency */,
+			);
+			name = LinguaCorsaSwiftTests;
+			productName = LinguaCorsaSwiftTests;
+			productReference = EF105436193F867000F1B375 /* LinguaCorsaSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF10541C193F867000F1B375 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Francescu;
+				TargetAttributes = {
+					EF105423193F867000F1B375 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					EF105435193F867000F1B375 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = EF105423193F867000F1B375;
+					};
+				};
+			};
+			buildConfigurationList = EF10541F193F867000F1B375 /* Build configuration list for PBXProject "LinguaCorsaSwift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EF10541B193F867000F1B375;
+			productRefGroup = EF105425193F867000F1B375 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF105423193F867000F1B375 /* LinguaCorsaSwift */,
+				EF105435193F867000F1B375 /* LinguaCorsaSwiftTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF105422193F867000F1B375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF10542F193F867000F1B375 /* Main.storyboard in Resources */,
+				EF105431193F867000F1B375 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF105434193F867000F1B375 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF105420193F867000F1B375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF10542C193F867000F1B375 /* ViewController.swift in Sources */,
+				EF10542A193F867000F1B375 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF105432193F867000F1B375 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF10543D193F867100F1B375 /* LinguaCorsaSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EF105438193F867100F1B375 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EF105423193F867000F1B375 /* LinguaCorsaSwift */;
+			targetProxy = EF105437193F867100F1B375 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EF10542D193F867000F1B375 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF10542E193F867000F1B375 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF10543E193F867100F1B375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF10543F193F867100F1B375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF105441193F867100F1B375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EF105442193F867100F1B375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EF105444193F867100F1B375 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LinguaCorsaSwift.app/LinguaCorsaSwift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LinguaCorsaSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		EF105445193F867100F1B375 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/LinguaCorsaSwift.app/LinguaCorsaSwift";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LinguaCorsaSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF10541F193F867000F1B375 /* Build configuration list for PBXProject "LinguaCorsaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF10543E193F867100F1B375 /* Debug */,
+				EF10543F193F867100F1B375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF105440193F867100F1B375 /* Build configuration list for PBXNativeTarget "LinguaCorsaSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF105441193F867100F1B375 /* Debug */,
+				EF105442193F867100F1B375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		EF105443193F867100F1B375 /* Build configuration list for PBXNativeTarget "LinguaCorsaSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF105444193F867100F1B375 /* Debug */,
+				EF105445193F867100F1B375 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF10541C193F867000F1B375 /* Project object */;
+}
