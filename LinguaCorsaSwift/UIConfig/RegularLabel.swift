@@ -16,6 +16,7 @@ class RegularLabel: UILabel {
     }
     
     func _setup () {
+        //Due to Swift lack of appearanceWhenContainedIn
         self.font = RegularLabel.appearance().font
     }
 

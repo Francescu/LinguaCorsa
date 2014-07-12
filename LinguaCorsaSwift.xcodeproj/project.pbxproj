@@ -90,7 +90,6 @@
 		EF10541B193F867000F1B375 = {
 			isa = PBXGroup;
 			children = (
-				EFEFC7CF1971DD1A005102C0 /* UIConfig */,
 				EF36B6FA1971305000BD5BA8 /* Frameworks */,
 				EF105426193F867000F1B375 /* LinguaCorsaSwift */,
 				EF105439193F867100F1B375 /* LinguaCorsaSwiftTests */,
@@ -112,6 +111,7 @@
 			children = (
 				EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */,
 				EF105429193F867000F1B375 /* AppDelegate.swift */,
+				EFEFC7CF1971DD1A005102C0 /* UIConfig */,
 				EFEFC7C319718B1A005102C0 /* Views */,
 				EFEFC7C019718AEC005102C0 /* Controllers */,
 				EFEFC7BB19718AE6005102C0 /* Models */,
@@ -220,8 +220,7 @@
 				EFEFC7D11971DD1A005102C0 /* StrongLabel.swift */,
 				EFEFC7D21971DD1A005102C0 /* UIConfig.swift */,
 			);
-			name = UIConfig;
-			path = LinguaCorsaSwift/UIConfig;
+			path = UIConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

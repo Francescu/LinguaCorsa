@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6153.11"/>
     </dependencies>
     <scenes>
-        <!--View Controller - CERCA-->
+        <!--View Controller - RICERCÀ-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LinguaCorsaSwift" customModuleProvider="target" sceneMemberID="viewController">
@@ -23,8 +23,8 @@
                                     <rect key="frame" x="0.0" y="0.0" width="480" height="74"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mkO-EX-mD3">
-                                            <rect key="frame" x="20" y="24" width="440" height="30"/>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Cume si dice ?" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mkO-EX-mD3">
+                                            <rect key="frame" x="20" y="22" width="440" height="30"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="Y47-8J-SLe"/>
                                             </constraints>
@@ -34,12 +34,21 @@
                                                 <outlet property="delegate" destination="BYZ-38-t0r" id="nCH-bi-JXe"/>
                                             </connections>
                                         </textField>
+                                        <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="D3k-UR-rnj">
+                                            <rect key="frame" x="423" y="27" width="37" height="37"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="37" id="Vgq-VN-adc"/>
+                                                <constraint firstAttribute="height" constant="37" id="b2O-Pt-tcR"/>
+                                            </constraints>
+                                        </activityIndicatorView>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <constraints>
                                         <constraint firstAttribute="trailing" secondItem="mkO-EX-mD3" secondAttribute="trailing" constant="20" id="1kQ-Ib-Fku"/>
-                                        <constraint firstItem="mkO-EX-mD3" firstAttribute="top" secondItem="XWd-ob-diB" secondAttribute="top" constant="24" id="EWb-V5-Ech"/>
+                                        <constraint firstAttribute="trailing" secondItem="D3k-UR-rnj" secondAttribute="trailing" constant="20" id="PAd-pw-YAz"/>
+                                        <constraint firstAttribute="centerY" secondItem="mkO-EX-mD3" secondAttribute="centerY" id="UcL-Ai-2zV"/>
                                         <constraint firstItem="mkO-EX-mD3" firstAttribute="leading" secondItem="XWd-ob-diB" secondAttribute="leading" constant="20" id="eg6-Vk-bR2"/>
+                                        <constraint firstAttribute="centerY" secondItem="D3k-UR-rnj" secondAttribute="centerY" constant="-8.5" id="vcy-aH-xsg"/>
                                     </constraints>
                                 </view>
                                 <connections>
@@ -57,9 +66,10 @@
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
-                    <navigationItem key="navigationItem" title="CERCA" id="cVm-Kk-Hou"/>
+                    <navigationItem key="navigationItem" title="RICERCÀ" id="cVm-Kk-Hou"/>
                     <connections>
                         <outlet property="searchTextField" destination="mkO-EX-mD3" id="nN9-qO-5Kx"/>
+                        <outlet property="spinner" destination="D3k-UR-rnj" id="QUL-Y7-dOu"/>
                         <outlet property="tableView" destination="X65-EI-34l" id="Xxl-NA-k50"/>
                     </connections>
                 </viewController>

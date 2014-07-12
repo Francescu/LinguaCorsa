@@ -16,6 +16,7 @@ class StrongLabel: UILabel {
     }
     
     func _setup () {
+        //Due to Swift lack of appearanceWhenContainedIn
         self.font = StrongLabel.appearance().font
     }
 }

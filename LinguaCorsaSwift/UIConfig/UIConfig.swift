@@ -26,5 +26,6 @@ struct UIConfig {
             NSForegroundColorAttributeName : UIColor.whiteColor()]
         UITableView.appearance().backgroundColor = UIColor.clearColor()
         UIApplication.sharedApplication().statusBarStyle = UIStatusBarStyle.LightContent
+        UIActivityIndicatorView.appearance().color = UIColor(white: 0, alpha: 0.8)
     }
 }

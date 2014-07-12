@@ -9,6 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
+    @IBOutlet var spinner : UIActivityIndicatorView
     var selectedRow = -1
     var entities:Array<Word> = Word[]() {
     willSet {
@@ -35,6 +36,16 @@ class ViewController: UIViewController {
     }
     }
     
+    var loading:Bool = false {
+    didSet {
+        if self.loading {
+            self.spinner.startAnimating()
+        } else {
+            self.spinner.stopAnimating()
+        }
+    }
+    }
+    
     @IBOutlet var tableView : UITableView
     @IBOutlet var searchTextField : UITextField
                             
@@ -51,6 +62,10 @@ class ViewController: UIViewController {
     
 
     func sendRequest () {
+        if self.loading {
+            return
+        }
+        self.loading = true
         AdececDataFetcher.fetchRequest(searchTextField.text, language: Language.French) {
             words, error in
             
@@ -59,6 +74,7 @@ class ViewController: UIViewController {
             }
             
             println(words)
+            self.loading = false
         }
         
     }
@@ -75,6 +91,9 @@ extension ViewController:UITextFieldDelegate {
     {
         self.sendRequest()
         return true
+    }
+    func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool {
+        return !self.loading
     }
 }
 
