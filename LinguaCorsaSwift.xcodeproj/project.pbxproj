@@ -20,10 +20,10 @@
 		EFEFC7BF19718AE6005102C0 /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7BD19718AE6005102C0 /* WordManager.swift */; };
 		EFEFC7C219718AEC005102C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C119718AEC005102C0 /* ViewController.swift */; };
 		EFEFC7C519718B53005102C0 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C419718B53005102C0 /* WordTableViewCell.swift */; };
-		EFEFC7C71971B206005102C0 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C61971B206005102C0 /* UIConfig.swift */; };
-		EFEFC7CA1971B576005102C0 /* StrongLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C91971B576005102C0 /* StrongLabel.swift */; };
-		EFEFC7CC1971B580005102C0 /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7CB1971B580005102C0 /* RegularLabel.swift */; };
 		EFEFC7CE1971D1CB005102C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */; };
+		EFEFC7D31971DD1A005102C0 /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D01971DD1A005102C0 /* RegularLabel.swift */; };
+		EFEFC7D41971DD1A005102C0 /* StrongLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D11971DD1A005102C0 /* StrongLabel.swift */; };
+		EFEFC7D51971DD1A005102C0 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D21971DD1A005102C0 /* UIConfig.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,10 +59,10 @@
 		EFEFC7BD19718AE6005102C0 /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
 		EFEFC7C119718AEC005102C0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EFEFC7C419718B53005102C0 /* WordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
-		EFEFC7C61971B206005102C0 /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
-		EFEFC7C91971B576005102C0 /* StrongLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrongLabel.swift; sourceTree = "<group>"; };
-		EFEFC7CB1971B580005102C0 /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		EFEFC7D01971DD1A005102C0 /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
+		EFEFC7D11971DD1A005102C0 /* StrongLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrongLabel.swift; sourceTree = "<group>"; };
+		EFEFC7D21971DD1A005102C0 /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +90,7 @@
 		EF10541B193F867000F1B375 = {
 			isa = PBXGroup;
 			children = (
+				EFEFC7CF1971DD1A005102C0 /* UIConfig */,
 				EF36B6FA1971305000BD5BA8 /* Frameworks */,
 				EF105426193F867000F1B375 /* LinguaCorsaSwift */,
 				EF105439193F867100F1B375 /* LinguaCorsaSwiftTests */,
@@ -111,7 +112,6 @@
 			children = (
 				EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */,
 				EF105429193F867000F1B375 /* AppDelegate.swift */,
-				EFEFC7C81971B54C005102C0 /* UIConfig */,
 				EFEFC7C319718B1A005102C0 /* Views */,
 				EFEFC7C019718AEC005102C0 /* Controllers */,
 				EFEFC7BB19718AE6005102C0 /* Models */,
@@ -213,14 +213,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		EFEFC7C81971B54C005102C0 /* UIConfig */ = {
+		EFEFC7CF1971DD1A005102C0 /* UIConfig */ = {
 			isa = PBXGroup;
 			children = (
-				EFEFC7C61971B206005102C0 /* UIConfig.swift */,
-				EFEFC7C91971B576005102C0 /* StrongLabel.swift */,
-				EFEFC7CB1971B580005102C0 /* RegularLabel.swift */,
+				EFEFC7D01971DD1A005102C0 /* RegularLabel.swift */,
+				EFEFC7D11971DD1A005102C0 /* StrongLabel.swift */,
+				EFEFC7D21971DD1A005102C0 /* UIConfig.swift */,
 			);
 			name = UIConfig;
+			path = LinguaCorsaSwift/UIConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,16 +324,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFEFC7CA1971B576005102C0 /* StrongLabel.swift in Sources */,
-				EFEFC7CC1971B580005102C0 /* RegularLabel.swift in Sources */,
+				EFEFC7D41971DD1A005102C0 /* StrongLabel.swift in Sources */,
+				EFEFC7D51971DD1A005102C0 /* UIConfig.swift in Sources */,
 				EFEFC7C219718AEC005102C0 /* ViewController.swift in Sources */,
 				EFEFC7BF19718AE6005102C0 /* WordManager.swift in Sources */,
 				EF36B7061971333F00BD5BA8 /* RXMLElement.m in Sources */,
 				EFEFC7BE19718AE6005102C0 /* Word.swift in Sources */,
 				EFEFC7C519718B53005102C0 /* WordTableViewCell.swift in Sources */,
-				EFEFC7C71971B206005102C0 /* UIConfig.swift in Sources */,
 				EF10542A193F867000F1B375 /* AppDelegate.swift in Sources */,
 				EF36B6F119712EEF00BD5BA8 /* AdececDataFetcher.swift in Sources */,
+				EFEFC7D31971DD1A005102C0 /* RegularLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
