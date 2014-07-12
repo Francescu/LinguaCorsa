@@ -8,10 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		EF10542A193F867000F1B375 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF105429193F867000F1B375 /* AppDelegate.swift */; };
-		EF10542C193F867000F1B375 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF10542B193F867000F1B375 /* ViewController.swift */; };
 		EF10542F193F867000F1B375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF10542D193F867000F1B375 /* Main.storyboard */; };
 		EF105431193F867000F1B375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF105430193F867000F1B375 /* Images.xcassets */; };
 		EF10543D193F867100F1B375 /* LinguaCorsaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */; };
+		EF105454193F8E3C00F1B375 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF105453193F8E3C00F1B375 /* CloudKit.framework */; };
+		EF36B6F119712EEF00BD5BA8 /* AdececDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */; };
+		EF36B6F719712F4300BD5BA8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36B6F619712F4300BD5BA8 /* libz.dylib */; };
+		EF36B6F919712F4900BD5BA8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36B6F819712F4900BD5BA8 /* libxml2.dylib */; };
+		EF36B7061971333F00BD5BA8 /* RXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = EF36B7051971333F00BD5BA8 /* RXMLElement.m */; };
+		EFEFC7BE19718AE6005102C0 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7BC19718AE6005102C0 /* Word.swift */; };
+		EFEFC7BF19718AE6005102C0 /* WordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7BD19718AE6005102C0 /* WordManager.swift */; };
+		EFEFC7C219718AEC005102C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C119718AEC005102C0 /* ViewController.swift */; };
+		EFEFC7C519718B53005102C0 /* WordTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C419718B53005102C0 /* WordTableViewCell.swift */; };
+		EFEFC7C71971B206005102C0 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C61971B206005102C0 /* UIConfig.swift */; };
+		EFEFC7CA1971B576005102C0 /* StrongLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7C91971B576005102C0 /* StrongLabel.swift */; };
+		EFEFC7CC1971B580005102C0 /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7CB1971B580005102C0 /* RegularLabel.swift */; };
+		EFEFC7CE1971D1CB005102C0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,12 +40,29 @@
 		EF105424193F867000F1B375 /* LinguaCorsaSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinguaCorsaSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF105428193F867000F1B375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF105429193F867000F1B375 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EF10542B193F867000F1B375 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EF10542E193F867000F1B375 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EF105430193F867000F1B375 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		EF105436193F867000F1B375 /* LinguaCorsaSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LinguaCorsaSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF10543B193F867100F1B375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaCorsaSwiftTests.swift; sourceTree = "<group>"; };
+		EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinguaCorsaSwift.entitlements; sourceTree = "<group>"; };
+		EF105453193F8E3C00F1B375 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		EF36B6ED19712EEF00BD5BA8 /* Adecec.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Adecec.playground; sourceTree = "<group>"; };
+		EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdececDataFetcher.swift; sourceTree = "<group>"; };
+		EF36B6EF19712EEF00BD5BA8 /* CloudKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloudKit.playground; sourceTree = "<group>"; };
+		EF36B6F619712F4300BD5BA8 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		EF36B6F819712F4900BD5BA8 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		EF36B6FE1971321F00BD5BA8 /* LinguaCorsaSwift-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LinguaCorsaSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		EF36B7041971333F00BD5BA8 /* RXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RXMLElement.h; sourceTree = "<group>"; };
+		EF36B7051971333F00BD5BA8 /* RXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RXMLElement.m; sourceTree = "<group>"; };
+		EFEFC7BC19718AE6005102C0 /* Word.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
+		EFEFC7BD19718AE6005102C0 /* WordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordManager.swift; sourceTree = "<group>"; };
+		EFEFC7C119718AEC005102C0 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EFEFC7C419718B53005102C0 /* WordTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordTableViewCell.swift; sourceTree = "<group>"; };
+		EFEFC7C61971B206005102C0 /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		EFEFC7C91971B576005102C0 /* StrongLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrongLabel.swift; sourceTree = "<group>"; };
+		EFEFC7CB1971B580005102C0 /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
+		EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +70,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEFC7CE1971D1CB005102C0 /* QuartzCore.framework in Frameworks */,
+				EF36B6F919712F4900BD5BA8 /* libxml2.dylib in Frameworks */,
+				EF36B6F719712F4300BD5BA8 /* libz.dylib in Frameworks */,
+				EF105454193F8E3C00F1B375 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +90,7 @@
 		EF10541B193F867000F1B375 = {
 			isa = PBXGroup;
 			children = (
+				EF36B6FA1971305000BD5BA8 /* Frameworks */,
 				EF105426193F867000F1B375 /* LinguaCorsaSwift */,
 				EF105439193F867100F1B375 /* LinguaCorsaSwiftTests */,
 				EF105425193F867000F1B375 /* Products */,
@@ -75,10 +109,16 @@
 		EF105426193F867000F1B375 /* LinguaCorsaSwift */ = {
 			isa = PBXGroup;
 			children = (
+				EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */,
 				EF105429193F867000F1B375 /* AppDelegate.swift */,
-				EF10542B193F867000F1B375 /* ViewController.swift */,
+				EFEFC7C81971B54C005102C0 /* UIConfig */,
+				EFEFC7C319718B1A005102C0 /* Views */,
+				EFEFC7C019718AEC005102C0 /* Controllers */,
+				EFEFC7BB19718AE6005102C0 /* Models */,
+				EF36B6EC19712EEF00BD5BA8 /* Fetchers */,
 				EF10542D193F867000F1B375 /* Main.storyboard */,
 				EF105430193F867000F1B375 /* Images.xcassets */,
+				EF36B6FE1971321F00BD5BA8 /* LinguaCorsaSwift-Bridging-Header.h */,
 				EF105427193F867000F1B375 /* Supporting Files */,
 			);
 			path = LinguaCorsaSwift;
@@ -107,6 +147,80 @@
 				EF10543B193F867100F1B375 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EF36B6EC19712EEF00BD5BA8 /* Fetchers */ = {
+			isa = PBXGroup;
+			children = (
+				EF36B6ED19712EEF00BD5BA8 /* Adecec.playground */,
+				EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */,
+				EF36B6EF19712EEF00BD5BA8 /* CloudKit.playground */,
+				EF36B6F019712EEF00BD5BA8 /* Parsers */,
+			);
+			path = Fetchers;
+			sourceTree = "<group>";
+		};
+		EF36B6F019712EEF00BD5BA8 /* Parsers */ = {
+			isa = PBXGroup;
+			children = (
+				EF36B6F219712F1100BD5BA8 /* RaptureXML */,
+			);
+			path = Parsers;
+			sourceTree = "<group>";
+		};
+		EF36B6F219712F1100BD5BA8 /* RaptureXML */ = {
+			isa = PBXGroup;
+			children = (
+				EF36B7041971333F00BD5BA8 /* RXMLElement.h */,
+				EF36B7051971333F00BD5BA8 /* RXMLElement.m */,
+			);
+			path = RaptureXML;
+			sourceTree = "<group>";
+		};
+		EF36B6FA1971305000BD5BA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */,
+				EF36B6F819712F4900BD5BA8 /* libxml2.dylib */,
+				EF36B6F619712F4300BD5BA8 /* libz.dylib */,
+				EF105453193F8E3C00F1B375 /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EFEFC7BB19718AE6005102C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFEFC7BC19718AE6005102C0 /* Word.swift */,
+				EFEFC7BD19718AE6005102C0 /* WordManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFEFC7C019718AEC005102C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				EFEFC7C119718AEC005102C0 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		EFEFC7C319718B1A005102C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFEFC7C419718B53005102C0 /* WordTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFEFC7C81971B54C005102C0 /* UIConfig */ = {
+			isa = PBXGroup;
+			children = (
+				EFEFC7C61971B206005102C0 /* UIConfig.swift */,
+				EFEFC7C91971B576005102C0 /* StrongLabel.swift */,
+				EFEFC7CB1971B580005102C0 /* RegularLabel.swift */,
+			);
+			name = UIConfig;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +272,7 @@
 				TargetAttributes = {
 					EF105423193F867000F1B375 = {
 						CreatedOnToolsVersion = 6.0;
+						DevelopmentTeam = HPW8Z33DD9;
 					};
 					EF105435193F867000F1B375 = {
 						CreatedOnToolsVersion = 6.0;
@@ -208,8 +323,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF10542C193F867000F1B375 /* ViewController.swift in Sources */,
+				EFEFC7CA1971B576005102C0 /* StrongLabel.swift in Sources */,
+				EFEFC7CC1971B580005102C0 /* RegularLabel.swift in Sources */,
+				EFEFC7C219718AEC005102C0 /* ViewController.swift in Sources */,
+				EFEFC7BF19718AE6005102C0 /* WordManager.swift in Sources */,
+				EF36B7061971333F00BD5BA8 /* RXMLElement.m in Sources */,
+				EFEFC7BE19718AE6005102C0 /* Word.swift in Sources */,
+				EFEFC7C519718B53005102C0 /* WordTableViewCell.swift in Sources */,
+				EFEFC7C71971B206005102C0 /* UIConfig.swift in Sources */,
 				EF10542A193F867000F1B375 /* AppDelegate.swift in Sources */,
+				EF36B6F119712EEF00BD5BA8 /* AdececDataFetcher.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,9 +450,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LinguaCorsaSwift/LinguaCorsaSwift.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"\"$(SDK_DIR)\"/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LinguaCorsaSwift/LinguaCorsaSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -338,9 +473,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = LinguaCorsaSwift/LinguaCorsaSwift.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode6-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"\"$(SDK_DIR)\"/usr/include/libxml2",
+				);
 				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LinguaCorsaSwift/LinguaCorsaSwift-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -399,6 +545,7 @@
 				EF105442193F867100F1B375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF105443193F867100F1B375 /* Build configuration list for PBXNativeTarget "LinguaCorsaSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +554,7 @@
 				EF105445193F867100F1B375 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
