@@ -26,8 +26,8 @@ class AdececDataFetcher: NSObject {
     class func fetchRequest(word:String, language:Language, type:AdececSearchType, callback:(Array<Word>?, NSError?) -> Void) {
 
         let url = self.buildURL(word, language:language, type:type)
-        let request = NSURLRequest(URL:url)
-        
+        var request = NSURLRequest(URL: url, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 3)
+
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
             response, data, error in
             

@@ -11,7 +11,6 @@
 		EF10542F193F867000F1B375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF10542D193F867000F1B375 /* Main.storyboard */; };
 		EF105431193F867000F1B375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF105430193F867000F1B375 /* Images.xcassets */; };
 		EF10543D193F867100F1B375 /* LinguaCorsaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */; };
-		EF105454193F8E3C00F1B375 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF105453193F8E3C00F1B375 /* CloudKit.framework */; };
 		EF36B6F119712EEF00BD5BA8 /* AdececDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */; };
 		EF36B6F719712F4300BD5BA8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36B6F619712F4300BD5BA8 /* libz.dylib */; };
 		EF36B6F919712F4900BD5BA8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36B6F819712F4900BD5BA8 /* libxml2.dylib */; };
@@ -24,6 +23,8 @@
 		EFEFC7D31971DD1A005102C0 /* RegularLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D01971DD1A005102C0 /* RegularLabel.swift */; };
 		EFEFC7D41971DD1A005102C0 /* StrongLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D11971DD1A005102C0 /* StrongLabel.swift */; };
 		EFEFC7D51971DD1A005102C0 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D21971DD1A005102C0 /* UIConfig.swift */; };
+		EFEFC7D7197285E2005102C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEFC7D6197285E2005102C0 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EFEFC7D919728618005102C0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEFC7D819728618005102C0 /* CloudKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,7 +47,6 @@
 		EF10543B193F867100F1B375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaCorsaSwiftTests.swift; sourceTree = "<group>"; };
 		EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinguaCorsaSwift.entitlements; sourceTree = "<group>"; };
-		EF105453193F8E3C00F1B375 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		EF36B6ED19712EEF00BD5BA8 /* Adecec.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Adecec.playground; sourceTree = "<group>"; };
 		EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdececDataFetcher.swift; sourceTree = "<group>"; };
 		EF36B6EF19712EEF00BD5BA8 /* CloudKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloudKit.playground; sourceTree = "<group>"; };
@@ -63,6 +63,8 @@
 		EFEFC7D01971DD1A005102C0 /* RegularLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegularLabel.swift; sourceTree = "<group>"; };
 		EFEFC7D11971DD1A005102C0 /* StrongLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StrongLabel.swift; sourceTree = "<group>"; };
 		EFEFC7D21971DD1A005102C0 /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
+		EFEFC7D6197285E2005102C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EFEFC7D819728618005102C0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,10 +72,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFEFC7D919728618005102C0 /* CloudKit.framework in Frameworks */,
+				EFEFC7D7197285E2005102C0 /* UIKit.framework in Frameworks */,
 				EFEFC7CE1971D1CB005102C0 /* QuartzCore.framework in Frameworks */,
 				EF36B6F919712F4900BD5BA8 /* libxml2.dylib in Frameworks */,
 				EF36B6F719712F4300BD5BA8 /* libz.dylib in Frameworks */,
-				EF105454193F8E3C00F1B375 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -180,10 +183,11 @@
 		EF36B6FA1971305000BD5BA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFEFC7D819728618005102C0 /* CloudKit.framework */,
+				EFEFC7D6197285E2005102C0 /* UIKit.framework */,
 				EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */,
 				EF36B6F819712F4900BD5BA8 /* libxml2.dylib */,
 				EF36B6F619712F4300BD5BA8 /* libz.dylib */,
-				EF105453193F8E3C00F1B375 /* CloudKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -460,6 +464,7 @@
 					"\"$(SDK_DIR)\"/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -483,6 +488,7 @@
 					"\"$(SDK_DIR)\"/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

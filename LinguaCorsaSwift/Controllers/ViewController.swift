@@ -69,6 +69,28 @@ class ViewController: UIViewController {
         AdececDataFetcher.fetchRequest(searchTextField.text, language: Language.French) {
             words, error in
             
+            if error {
+                var device : UIDevice = UIDevice.currentDevice()!;
+                var systemVersion = device.systemVersion;
+                var iosVerion : Float = systemVersion.bridgeToObjectiveC().floatValue;
+                if(iosVerion < 8.0) {
+                    let alert = UIAlertView()
+                    alert.title = "Error"
+                    alert.message = error?.localizedDescription
+                    alert.addButtonWithTitle("Aghju capitu")
+                    alert.show()
+                }else{
+                    let alert = UIAlertController(title: "Error", message: error!.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
+                    let action = UIAlertAction(title: "Aghju capitu", style: UIAlertActionStyle.Default) {
+                        action in
+                        
+                    }
+                    alert.addAction(action)
+                    self.presentViewController(alert, animated: true) {}
+
+                }
+            }
+            
             if words {
                 self.entities = words!
             }
