@@ -25,6 +25,8 @@
 		EFEFC7D51971DD1A005102C0 /* UIConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEFC7D21971DD1A005102C0 /* UIConfig.swift */; };
 		EFEFC7D7197285E2005102C0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEFC7D6197285E2005102C0 /* UIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		EFEFC7D919728618005102C0 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFEFC7D819728618005102C0 /* CloudKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		EFF0D97E1975AE5F004D53C5 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0D97D1975AE5F004D53C5 /* Request.swift */; };
+		EFF0D9801975AEEF004D53C5 /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF0D97F1975AEEF004D53C5 /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		EFEFC7D21971DD1A005102C0 /* UIConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIConfig.swift; sourceTree = "<group>"; };
 		EFEFC7D6197285E2005102C0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EFEFC7D819728618005102C0 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		EFF0D97D1975AE5F004D53C5 /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		EFF0D97F1975AEEF004D53C5 /* RequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +201,8 @@
 			children = (
 				EFEFC7BC19718AE6005102C0 /* Word.swift */,
 				EFEFC7BD19718AE6005102C0 /* WordManager.swift */,
+				EFF0D97D1975AE5F004D53C5 /* Request.swift */,
+				EFF0D97F1975AEEF004D53C5 /* RequestManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -330,7 +336,9 @@
 				EFEFC7D41971DD1A005102C0 /* StrongLabel.swift in Sources */,
 				EFEFC7D51971DD1A005102C0 /* UIConfig.swift in Sources */,
 				EFEFC7C219718AEC005102C0 /* ViewController.swift in Sources */,
+				EFF0D9801975AEEF004D53C5 /* RequestManager.swift in Sources */,
 				EFEFC7BF19718AE6005102C0 /* WordManager.swift in Sources */,
+				EFF0D97E1975AE5F004D53C5 /* Request.swift in Sources */,
 				EF36B7061971333F00BD5BA8 /* RXMLElement.m in Sources */,
 				EFEFC7BE19718AE6005102C0 /* Word.swift in Sources */,
 				EFEFC7C519718B53005102C0 /* WordTableViewCell.swift in Sources */,
