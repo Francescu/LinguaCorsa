@@ -8,6 +8,8 @@
 
 import UIKit
 
+
+
 enum AdececSearchType:Int {
     case Matches = 0
     case BeginsWith = 1
@@ -26,12 +28,13 @@ class AdececDataFetcher: NSObject {
     class func fetchRequest(word:String, language:Language, type:AdececSearchType, callback:(Array<Word>?, NSError?) -> Void) {
 
         let url = self.buildURL(word, language:language, type:type)
-        var request = NSURLRequest(URL: url, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 3)
+        var request = NSMutableURLRequest(URL: url, cachePolicy:NSURLRequestCachePolicy.ReturnCacheDataElseLoad, timeoutInterval: 3)
+        request.HTTPMethod = "POST"
 
         NSURLConnection.sendAsynchronousRequest(request, queue: NSOperationQueue.mainQueue()) {
             response, data, error in
             
-            if (!data)
+            if data == nil
             {
                 callback(nil, error)
             } else {
@@ -43,12 +46,14 @@ class AdececDataFetcher: NSObject {
                     element in
                     if let word = WordManager.entityFromXML(element, language: language) {
                         words.append(word)
+                        WordManager.save(word)
                     }
                 }
 
                 if words.count == 0 {
                     if word.hasSuffix("s") {
-                        self.fetchRequest(word.substringToIndex(countElements(word)-1), language: language, type: type, callback: callback)
+                        let singular = (word as NSString).substringToIndex(countElements(word)-1)
+                        self.fetchRequest(singular, language: language, type: type, callback: callback)
                     } else if type == AdececSearchType.defaultValue() {
                         self.fetchRequest(word, language: language, type: AdececSearchType.BeginsWith, callback: callback)
                     } else {
@@ -67,7 +72,7 @@ class AdececDataFetcher: NSObject {
         
         var URLString = root.stringByAppendingFormat("l=%d", language.AdececCode())
         URLString += "&sc="+String(type.toRaw())+"&c="
-        URLString += word.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)
+        URLString += word.stringByAddingPercentEscapesUsingEncoding(NSUTF8StringEncoding)!
         
         println(URLString)
         return NSURL.URLWithString(URLString)

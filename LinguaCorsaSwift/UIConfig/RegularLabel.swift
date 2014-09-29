@@ -10,9 +10,13 @@ import UIKit
 
 class RegularLabel: UILabel {
 
-    init(frame: CGRect) {
+    override init(frame: CGRect) {
         super.init(frame: frame)
         self._setup()
+    }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     func _setup () {

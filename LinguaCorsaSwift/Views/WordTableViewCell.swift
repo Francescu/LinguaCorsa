@@ -16,8 +16,8 @@ class WordTableViewCell: UITableViewCell {
     let definitionLabel = RegularLabel(frame: CGRectZero)
     let synonymesLabel = RegularLabel(frame: CGRectZero)
     
-    init(style: UITableViewCellStyle, reuseIdentifier: String) {
-        super.init(style: style, reuseIdentifier: reuseIdentifier)
+    override init(style: UITableViewCellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier?)
         // Initialization code
         self.backgroundColor = UIColor.clearColor()
         self.selectedBackgroundView = UIView()
@@ -28,13 +28,18 @@ class WordTableViewCell: UITableViewCell {
         self.contentView.addSubview(self.synonymesLabel)
         self.contentView.clipsToBounds = true
         self.clipsToBounds = true
-        self.textLabel.hidden = true
-        self.detailTextLabel.hidden = true
+        self.textLabel?.hidden = true
+        self.detailTextLabel?.hidden = true
         self.definitionLabel.layer.opacity = 0
         self.synonymesLabel.layer.opacity = 0
         self.definitionLabel.numberOfLines = 2
         self.synonymesLabel.numberOfLines = 2
     }
+
+    required init(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         let padding:CGFloat = 10.0

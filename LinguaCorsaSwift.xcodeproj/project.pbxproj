@@ -11,6 +11,8 @@
 		EF10542F193F867000F1B375 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF10542D193F867000F1B375 /* Main.storyboard */; };
 		EF105431193F867000F1B375 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF105430193F867000F1B375 /* Images.xcassets */; };
 		EF10543D193F867100F1B375 /* LinguaCorsaSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */; };
+		EF349E6019804CA700B4C463 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF349E5F19804CA700B4C463 /* Accelerate.framework */; };
+		EF349E6719804E7A00B4C463 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = EF349E6619804E7A00B4C463 /* UIImage+ImageEffects.m */; };
 		EF36B6F119712EEF00BD5BA8 /* AdececDataFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */; };
 		EF36B6F719712F4300BD5BA8 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36B6F619712F4300BD5BA8 /* libz.dylib */; };
 		EF36B6F919712F4900BD5BA8 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = EF36B6F819712F4900BD5BA8 /* libxml2.dylib */; };
@@ -49,6 +51,9 @@
 		EF10543B193F867100F1B375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF10543C193F867100F1B375 /* LinguaCorsaSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinguaCorsaSwiftTests.swift; sourceTree = "<group>"; };
 		EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LinguaCorsaSwift.entitlements; sourceTree = "<group>"; };
+		EF349E5F19804CA700B4C463 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		EF349E6519804E7A00B4C463 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		EF349E6619804E7A00B4C463 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		EF36B6ED19712EEF00BD5BA8 /* Adecec.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Adecec.playground; sourceTree = "<group>"; };
 		EF36B6EE19712EEF00BD5BA8 /* AdececDataFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdececDataFetcher.swift; sourceTree = "<group>"; };
 		EF36B6EF19712EEF00BD5BA8 /* CloudKit.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CloudKit.playground; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF349E6019804CA700B4C463 /* Accelerate.framework in Frameworks */,
 				EFEFC7D919728618005102C0 /* CloudKit.framework in Frameworks */,
 				EFEFC7D7197285E2005102C0 /* UIKit.framework in Frameworks */,
 				EFEFC7CE1971D1CB005102C0 /* QuartzCore.framework in Frameworks */,
@@ -118,6 +124,7 @@
 			children = (
 				EF105452193F8E3100F1B375 /* LinguaCorsaSwift.entitlements */,
 				EF105429193F867000F1B375 /* AppDelegate.swift */,
+				EF349E6119804D4E00B4C463 /* Helpers */,
 				EFEFC7CF1971DD1A005102C0 /* UIConfig */,
 				EFEFC7C319718B1A005102C0 /* Views */,
 				EFEFC7C019718AEC005102C0 /* Controllers */,
@@ -156,6 +163,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		EF349E6119804D4E00B4C463 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EF349E6519804E7A00B4C463 /* UIImage+ImageEffects.h */,
+				EF349E6619804E7A00B4C463 /* UIImage+ImageEffects.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		EF36B6EC19712EEF00BD5BA8 /* Fetchers */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,6 +203,7 @@
 		EF36B6FA1971305000BD5BA8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF349E5F19804CA700B4C463 /* Accelerate.framework */,
 				EFEFC7D819728618005102C0 /* CloudKit.framework */,
 				EFEFC7D6197285E2005102C0 /* UIKit.framework */,
 				EFEFC7CD1971D1CB005102C0 /* QuartzCore.framework */,
@@ -334,6 +351,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFEFC7D41971DD1A005102C0 /* StrongLabel.swift in Sources */,
+				EF349E6719804E7A00B4C463 /* UIImage+ImageEffects.m in Sources */,
 				EFEFC7D51971DD1A005102C0 /* UIConfig.swift in Sources */,
 				EFEFC7C219718AEC005102C0 /* ViewController.swift in Sources */,
 				EFF0D9801975AEEF004D53C5 /* RequestManager.swift in Sources */,
@@ -438,7 +456,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -472,7 +490,7 @@
 					"\"$(SDK_DIR)\"/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
@@ -496,7 +514,7 @@
 					"\"$(SDK_DIR)\"/usr/include/libxml2",
 				);
 				INFOPLIST_FILE = LinguaCorsaSwift/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";

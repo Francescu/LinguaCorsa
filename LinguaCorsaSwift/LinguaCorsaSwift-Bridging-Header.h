@@ -7,3 +7,4 @@
 //
 
 #import "RXMLElement.h"
+#import "UIImage+ImageEffects.h"

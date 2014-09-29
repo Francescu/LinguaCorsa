@@ -8,6 +8,13 @@
 
 import UIKit
 
+func |<T>(a:T?, b:T) -> T {
+    if a != nil {
+        return a!
+    }
+    return b
+}
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
